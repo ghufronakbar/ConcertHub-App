@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#FFA31A</color>
+    <color name="secondary">#808080</color>
+    <color name="tersier">#ACE2E1</color>
+    <color name="tersier2">#F7EEDD</color>
+    <color name="grey">#8F8F8F</color>
+    <color name="pending">#8F8F8F</color>
+    <color name="cbu">#ff4444</color>
+    <color name="annomaly">#cc0000</color>
+    <color name="paid">#00C851</color>
+    <color name="timeout">#cc0000</color>
+    <color name="confirm">#007e33</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="border">#DCDCDC</color>
+    <color name="transparent2">#CBB8B8B8</color>
+    <color name="un_select">#66000000</color>
+</resources>
