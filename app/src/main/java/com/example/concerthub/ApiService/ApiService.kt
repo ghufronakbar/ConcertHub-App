@@ -70,7 +70,14 @@ interface ApiService {
         @Body requestBody: Map<String, String>
     ): Call<orderResponse>?
 
-    data class orderResponse(val status: Int, val id_histories: Int, val message: String)
+    data class orderResponse(
+        val status: Int,
+        val id_histories: Int,
+        val message: String,
+        val midtrans_snap_token: String,
+        val midtrans_redirect_url: String,
+        val midtrans_order_id: String
+    )
 
     @PUT("/api/user/order/cancel/{id_history}")
     fun cancelOrder(

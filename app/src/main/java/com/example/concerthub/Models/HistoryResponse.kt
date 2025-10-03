@@ -16,5 +16,7 @@ data class HistoryResponse(
     @SerializedName("fullname") val fullname: String,
     @SerializedName("email") val email: String,
     @SerializedName("phone") val phone: String,
-    @SerializedName("payment_information") val paymentInformation: String
+    @SerializedName("midtrans_order_id") val midtransOrderId: String?,
+    @SerializedName("midtrans_snap_token") val midtransSnapToken: String?,
+    @SerializedName("midtrans_redirect_url") val midtransRedirectUrl: String?
 )

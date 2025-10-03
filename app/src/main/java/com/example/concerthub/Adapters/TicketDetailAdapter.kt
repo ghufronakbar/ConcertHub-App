@@ -129,11 +129,13 @@ class TicketDetailAdapter(private val tickets: List<Ticket>) :
                     ) {
                         if (response.isSuccessful) {
                             val id_history = response.body()?.id_histories
+                            val snapToken = response.body()?.midtrans_snap_token
                             val intent = Intent(context, PaymentPage::class.java).apply {
                                 putExtra("id_history", id_history.toString())
+                                putExtra("snapToken", snapToken.toString())
                             }
                             context.startActivity(intent)
-                            Toast.makeText(context, "Anda telah memesan $quantity tiket.", Toast.LENGTH_SHORT)
+                            Toast.makeText(context, "Berhasil memesan tiket", Toast.LENGTH_SHORT)
                                 .show()
 
                         } else if (response.code() == 401) {

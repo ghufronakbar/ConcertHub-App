@@ -34,6 +34,7 @@ class DetailHistoryPage : AppCompatActivity() {
     private lateinit var cancelOrderButton: Button
     private lateinit var swipeRefreshLayout: SwipeRefreshLayout
     private lateinit var id_history: String
+    private lateinit var snapToken: String
 
     companion object {
         const val PAYMENT_REQUEST_CODE = 1001
@@ -44,6 +45,7 @@ class DetailHistoryPage : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_detail_history_page)
         id_history = intent.getStringExtra("id_history")!!
+        snapToken = intent.getStringExtra("snapToken")!!
         cancelOrderButton = findViewById(R.id.cancel_order)
         btnBack = findViewById(R.id.btn_back)
         informationPayment = findViewById(R.id.information_payment)
@@ -68,6 +70,7 @@ class DetailHistoryPage : AppCompatActivity() {
             informationPayment.setOnClickListener {
                 val intent = Intent(this, PaymentPage::class.java).apply {
                     putExtra("id_history", id_history)
+                    putExtra("snapToken", snapToken)
                 }
                 startActivityForResult(intent, PAYMENT_REQUEST_CODE)
             }

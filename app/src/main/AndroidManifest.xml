@@ -21,6 +21,9 @@
         android:theme="@style/Theme.EventEase"
         tools:targetApi="31">
         <activity
+            android:name=".DetailEventActivity.MidtransPayment"
+            android:exported="false" />
+        <activity
             android:name=".MainPageActivity.HistoryPageActivity.DetailHistoryPage"
             android:exported="false" />
         <activity

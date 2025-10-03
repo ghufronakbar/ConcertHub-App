@@ -10,6 +10,7 @@ data class RecycleHistoryModel (
     val amount: Int,
     val total: Int,
     @SerializedName("unique_code") val uniqueCode: String?,
+    @SerializedName("midtrans_snap_token") val midtrans_snap_token: String?,
     val paid: Int,
     val used: Int,
     val datetime: String,

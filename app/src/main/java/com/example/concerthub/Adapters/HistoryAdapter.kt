@@ -31,6 +31,7 @@ class HistoryAdapter(
         holder.itemView.setOnClickListener {
             val intent = Intent(context, DetailHistoryPage::class.java).apply {
                 putExtra("id_history", history.idHistory.toString())
+                putExtra("snapToken", history.midtrans_snap_token.toString())
             }
             holder.itemView.context.startActivity(intent)
         }

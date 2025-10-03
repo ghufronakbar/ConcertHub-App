@@ -14,7 +14,6 @@ data class EventDetailResponse(
     @SerializedName("event_image") val eventImage: String,
     @SerializedName("site_plan_image") val sitePlanImage: String,
     @SerializedName("status") val status: String,
-    @SerializedName("payment_information") val paymentInformation: String,
     @SerializedName("event_start") val eventStart: String,
     @SerializedName("event_end") val eventEnd: String,
     @SerializedName("created_at") val createdAt: String,
